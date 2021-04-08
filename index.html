@@ -60,7 +60,7 @@
 
       <nav class="nav-menu">
         <ul>
-          <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
@@ -82,6 +82,10 @@
           data-typed-items="Problem Solver, Full Stack Developer, .Net Developer, React Developer,  Freelancer"></span>
       </p>
       <!-- TODO - Add a HIRE ME button -->
+      <!-- <h4>
+        <a href="#contact"><i class="bx bx-envelope"></i> Contact Me</a>
+      </h4> -->
+
     </div>
   </section><!-- End Hero -->
 
@@ -94,13 +98,13 @@
 
         <div class="section-title">
           <!-- TODO - rewrite the About section -->
-          <h2>Full Stack Developer</h2>
+          <h2>About Me</h2>
           <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsa.</p> -->
         </div>
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="/img/profile-img.jpg" class="img-fluid" alt="">
+            <img src="/img/profile-img.jpg" class="img-fluid border" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <!-- <h3>Full Stack Web Developer.</h3> -->
@@ -110,6 +114,12 @@
               dolore
               magna aliqua.
             </p> -->
+            <p>I am a Full Stack .Net Developer seeking remote and local opportunities. Contract or full
+              time.</p>
+
+            <p>Self-motivated problem solver looking to drive technical projects from design, implementation,
+              deployment, and monitoring. In addition to coding, I have 20+ years of analytics, training, and management
+              experience.</p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
@@ -125,12 +135,12 @@
               </div>
             </div>
             <!-- TODO - What do I need to type here? -->
-            <p>
+            <!-- <p>
               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et
               ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p>
+            </p> -->
           </div>
         </div>
 
@@ -345,7 +355,7 @@
 
     <!-- ======= Portfolio Section ======= -->
     <!-- TODO - #1 Projects, #2 JS Challenges -->
-    <!-- TODO - Remove venobot -->
+    <!-- TODO - Remove venobot (Complete) -->
     <!-- TODO - Change name to Projects -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
@@ -703,40 +713,37 @@
 
           </div>
 
+          <!-- TODO - Add EMAIL JS -->
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form role="form" class="php-email-form" id='form'>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4"
+                  <input type="text" name="from_name" class="form-control" id="name" data-rule="minlen:4"
                     data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
+                  <!-- <div class="validate"></div> -->
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email"
+                  <input type="email" class="form-control" name="reply_to" id="email" data-rule="email"
                     data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
+                  <!-- <div class="validate"></div> -->
                 </div>
               </div>
               <div class="form-group">
                 <label for="name">Subject</label>
                 <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4"
                   data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
+                <!-- <div class="validate"></div> -->
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
                 <textarea class="form-control" name="message" rows="10" data-rule="required"
                   data-msg="Please write something for us"></textarea>
-                <div class="validate"></div>
+                <!-- <div class="validate"></div> -->
               </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+
+              <div class="text-center"><button type="submit" id='button'>Send Message</button></div>
             </form>
           </div>
 
@@ -1013,6 +1020,16 @@
 
   <!-- Template Main JS File -->
   <script src="/js/main.js"></script>
+
+  <!-- Email JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('user_0mP6kFwxLXBifyXWnjrVP')
+  </script>
+
+  <!-- Site JS -->
+  <script src="/js/site.js"></script>
 
 </body>
 
