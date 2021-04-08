@@ -31,3 +31,29 @@ myForm.addEventListener('submit', function (event) {
       // alert(JSON.stringify(err));
     });
 });
+
+// Add a Let's Connect Pop-up
+
+// sweet button hire me
+function sweetAlert() {
+  Swal.fire({
+    /* Popup window position, can be 'top', 'top-start', 'top-end', 
+    'center', 'center-start', 'center-end', 'bottom', 'bottom-start', 
+    or 'bottom-end'.*/
+    position: 'center',
+    //icon: 'success',
+    showCloseButton: true,
+    width: 400,
+    title: 'Email Me:',
+    html: '<form id="form" class="php-email-form">' +
+      '<div class="form-group"><label>Your Name</label><input type="text" class="form-control" required name="from_name" /></div>' +
+      '<div class="form-group"><label>Your Email</label><input type="email" class="form-control" name="reply_to" /></div>' +
+      '<div class="form-group"><label>Subject</label><input type="text" name="subject" required class="form-control" /></div>' +
+      '<div class="form-group"><label>Message</label><textarea type="text" class="form-control" required' +
+      'name="message"></textarea></div>' +
+      '<div class="form-group"><input id="button" type="submit" value="Send Email" class="btn btn-primary" /></div>' +
+      '</form>',
+    //html: '<form id="form"><div class="form-group"><label>Name</label><input type="text" class="form-control" required name="from_name" /></div><div class="form-group"><label>Email</label><input type = "email" class="form-control" name="reply_to" /></div><div class="form-group"><label>Subject</label><input type="text" name="subject" required class="form-control" /></div><div class="form-group"><label>Message</label><textarea type="text" class="form-control" required name="message"></textarea></div><div class="form-group"><input id="button" type="submit" value="Send Email" class="btn btn-primary" /></div></form>',
+    showConfirmButton: false,
+  });
+}
