@@ -79,7 +79,9 @@
     <div class="hero-container" data-aos="fade-in">
       <h1>Josue Cedeno</h1>
       <p>I am a <span class="typed"
-          data-typed-items="Full Stack Developer, .Net Developer, React Developer,  Freelancer"></span></p>
+          data-typed-items="Problem Solver, Full Stack Developer, .Net Developer, React Developer,  Freelancer"></span>
+      </p>
+      <!-- TODO - Add a HIRE ME button -->
     </div>
   </section><!-- End Hero -->
 
@@ -304,7 +306,8 @@
                 dila</p>
             </div>
           </div> -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <!-- change col-lg-6 to col -->
+          <div class="col" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
               <h4>Full Stack Software Developer - .Net</h4>
@@ -343,6 +346,7 @@
     <!-- ======= Portfolio Section ======= -->
     <!-- TODO - #1 Projects, #2 JS Challenges -->
     <!-- TODO - Remove venobot -->
+    <!-- TODO - Change name to Projects -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
@@ -353,7 +357,8 @@
             used to build that project.</p>
         </div>
 
-        <div class="row" data-aos="fade-up">
+        <!-- TODO - REMOVE filter (Complete) -->
+        <!-- <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -362,11 +367,52 @@
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+        <!-- TODO - Remove aos (Complete) -->
+        <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100"> -->
+        <div class="row">
 
+          <!-- This creates an image that will launch the modal when the left button is clicked -->
+          <!-- The data-toggle="modal" data-target="#blogModal" are the functional code -->
+          <!-- BLOG PROJECT -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="/img/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="javascript:void();" data-target="#blogModal" data-toggle="modal" title="App 1"><i
+                    class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BUG TRACKER -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="/img/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="javascript:void();" data-target="#bugModal" data-toggle="modal" title="App 1"><i
+                    class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOVIE PRO -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="/img/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="javascript:void();" data-target="#movieModal" data-toggle="modal" title="App 1"><i
+                    class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TODO - Remove original card (Complete) -->
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="/img/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
@@ -375,92 +421,87 @@
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="/img/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="/img/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i
-                    class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
 
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Coding Challenges ======= -->
+    <!-- TODO - #1 Projects, #2 JS Challenges -->
+    <!-- TODO - Remove venobot -->
+    <!-- TODO - Change name to Projects -->
+    <section id="coding-challenges" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Coding Challenges</h2>
+          <p>This collection of projects showcases my knowledge and application of different languages to produce
+            practical solutions to real-world problems. Clicking an icon will show you the language and technologies
+            used to build that project.</p>
+        </div>
+
+        <div class="row">
+
+          <!-- Coding Challenge 1 -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="/img/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="/img/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i
-                    class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="/img/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/img/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i
+                <a href="javascript:void();" data-target="#challenge-1-Modal" data-toggle="modal" title="App 1"><i
                     class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <!-- Coding Challenge 2 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="/img/portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/img/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i
+                <a href="javascript:void();" data-target="#challenge-2-Modal" data-toggle="modal" title="App 1"><i
                     class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
+          <!-- Coding Challenge 3 -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="/img/portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/img/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i
+                <a href="javascript:void();" data-target="#challenge-3-Modal" data-toggle="modal" title="App 1"><i
                     class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <!-- Coding Challenge 4 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="/img/portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/img/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i
+                <a href="javascript:void();" data-target="#challenge-4-Modal" data-toggle="modal" title="App 1"><i
                     class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <!-- Coding Challenge 5 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="/img/portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/img/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i
+                <a href="javascript:void();" data-target="#challenge-5-Modal" data-toggle="modal" title="App 1"><i
                     class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="/img/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="/img/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i
-                    class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -620,6 +661,7 @@
 
     <!-- ======= Contact Section ======= -->
     <!-- TODO - Update contact information -->
+    <!-- TODO - Can I add an attachment with the email response? -->
     <section id="contact" class="contact">
       <div class="container">
 
@@ -722,6 +764,239 @@
   </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- PROJECT MODALS -->
+  <!-- Blog Modal Section -->
+  <section id='blog-modal'>
+
+    <div class="modal fade" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="blogModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="blogTitle">Blog</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="/img/placeholder.jpg" class="img-fluid" />
+            <p>BLOG</p>
+            <p>This is a collection of blog posts I've written during my path to becoming a software developer
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="#" class="btn btn-primary" target="_blank">Visit the Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Modal -->
+  </section>
+
+  <!-- Bug Tracker Modal Section -->
+  <section id='bug-modal'>
+
+    <div class="modal fade" id="bugModal" tabindex="-1" role="dialog" aria-labelledby="blogModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="bugTitle">Bug Tracker</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="/img/placeholder.jpg" class="img-fluid" />
+            <p>BUG TRACKER</p>
+            <p>This is a collection of blog posts I've written during my path to becoming a software developer
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="#" class="btn btn-primary" target="_blank">Visit the Bug Tracker</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Modal -->
+  </section>
+
+  <!-- Movie Pro Modal Section -->
+  <section id='movie-modal'>
+
+    <div class="modal fade" id="movieModal" tabindex="-1" role="dialog" aria-labelledby="blogModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="movieTitle">Movie Pro</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="/img/placeholder.jpg" class="img-fluid" />
+            <p>MOVIE PRO</p>
+            <p>This is a collection of blog posts I've written during my path to becoming a software developer
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="#" class="btn btn-primary" target="_blank">Visit Movie Pro</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Modal -->
+  </section>
+
+
+  <!-- CODE CHALLENGE MODALS -->
+  <!-- Challenge 1 Section -->
+  <section id='challenge-1-modal'>
+
+    <div class="modal fade" id="challenge-1-Modal" tabindex="-1" role="dialog" aria-labelledby="blogModal"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="challenge1Title">Coding Challenge 1</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="/img/placeholder.jpg" class="img-fluid" />
+            <p>CODING CHALLENGE 1</p>
+            <p>This is a collection of blog posts I've written during my path to becoming a software developer
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="#" class="btn btn-primary" target="_blank">Visit Coding Challenge 1</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Modal -->
+  </section>
+
+  <!-- Challenge 2 Section -->
+  <section id='challenge-2-modal'>
+
+    <div class="modal fade" id="challenge-2-Modal" tabindex="-1" role="dialog" aria-labelledby="blogModal"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="challenge2Title">Coding Challenge 2</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="/img/placeholder.jpg" class="img-fluid" />
+            <p>CODING CHALLENGE 2</p>
+            <p>This is a collection of blog posts I've written during my path to becoming a software developer
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="#" class="btn btn-primary" target="_blank">Visit Coding Challenge 2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Modal -->
+  </section>
+
+  <!-- Challenge 3 Section -->
+  <section id='challenge-3-modal'>
+
+    <div class="modal fade" id="challenge-3-Modal" tabindex="-1" role="dialog" aria-labelledby="blogModal"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="challenge3Title">Coding Challenge 1</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="/img/placeholder.jpg" class="img-fluid" />
+            <p>CODING CHALLENGE 3</p>
+            <p>This is a collection of blog posts I've written during my path to becoming a software developer
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="#" class="btn btn-primary" target="_blank">Visit Coding Challenge 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Modal -->
+  </section>
+
+  <!-- Challenge 4 Section -->
+  <section id='challenge-4-modal'>
+
+    <div class="modal fade" id="challenge-4-Modal" tabindex="-1" role="dialog" aria-labelledby="blogModal"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="challenge1Title">Coding Challenge 4</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="/img/placeholder.jpg" class="img-fluid" />
+            <p>CODING CHALLENGE 4</p>
+            <p>This is a collection of blog posts I've written during my path to becoming a software developer
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="#" class="btn btn-primary" target="_blank">Visit Coding Challenge 4</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Modal -->
+  </section>
+
+  <!-- Challenge 5 Section -->
+  <section id='challenge-5-modal'>
+
+    <div class="modal fade" id="challenge-5-Modal" tabindex="-1" role="dialog" aria-labelledby="blogModal"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="challenge1Title">Coding Challenge 5</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="/img/placeholder.jpg" class="img-fluid" />
+            <p>CODING CHALLENGE 5</p>
+            <p>This is a collection of blog posts I've written during my path to becoming a software developer
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="#" class="btn btn-primary" target="_blank">Visit Coding Challenge 5</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Modal -->
+  </section>
+
 
   <!-- Vendor JS Files -->
   <script src="/js/jquery.min.js"></script>

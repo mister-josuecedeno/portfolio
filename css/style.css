@@ -9,6 +9,7 @@
 :root {
   --primary-color-original: #149ddd;
   --primary-color: #EFC265;
+  --secondary-color: #f5f8fd;
 }
 
 /*--------------------------------------------------------------
@@ -298,8 +299,9 @@ section {
   overflow: hidden;
 }
 
+/* change #f5f8fd to var(--secondary-color) */
 .section-bg {
-  background: #f5f8fd;
+  background: var(--secondary-color);
 }
 
 .section-title {
@@ -409,7 +411,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 50px;
@@ -454,10 +456,11 @@ section {
   color: #050d18;
 }
 
+/* change #1f5297 to  var(--primary-color)*/
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid var(--primary-color);
   position: relative;
 }
 
@@ -492,6 +495,7 @@ section {
   padding-bottom: 0;
 }
 
+/* change #1f5297 to var(--primary-color) */
 .resume .resume-item::before {
   content: "";
   position: absolute;
@@ -501,7 +505,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid var(--primary-color);
 }
 
 /*--------------------------------------------------------------
@@ -769,13 +773,14 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
+/* #dff3fc */
 .contact .info i {
   font-size: 20px;
   color: var(--primary-color);
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
