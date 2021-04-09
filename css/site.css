@@ -1,11 +1,20 @@
 /* Use variables to change colors without fear */
+/* warning - #E0A800 */
+/* profile-image - #EFC265 */
 :root {
-  --primary-color: #EFC265;
+  --primary-color: #E0A800;
 }
 
 .my-skill {
   font-size: 3em;
   color: var(--primary-color);
+}
+
+/* Glass Morphism */
+#hero-container {
+  /* background: rgba(255, 255, 255, 0.3); */
+  /* border-color: rgba(255, 255, 255, 0.25); */
+  /* border-radius: 10px; */
 }
 
 /* Animated Mouse */
