@@ -5,6 +5,10 @@
   --primary-color: #E0A800;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .my-skill {
   font-size: 3em;
   color: var(--primary-color);
