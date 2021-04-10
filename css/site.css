@@ -3,6 +3,7 @@
 /* profile-image - #EFC265 */
 :root {
   --primary-color: #E0A800;
+  --primary-color-hover: #ebd8a0;
 }
 
 html {
@@ -12,13 +13,6 @@ html {
 .my-skill {
   font-size: 3em;
   color: var(--primary-color);
-}
-
-/* Glass Morphism */
-#hero-container {
-  /* background: rgba(255, 255, 255, 0.3); */
-  /* border-color: rgba(255, 255, 255, 0.25); */
-  /* border-radius: 10px; */
 }
 
 /* Animated Mouse */
@@ -62,4 +56,39 @@ html {
   to {
     transform: translate(0, 6px) scale(1, 0.8);
   }
+}
+
+/* Skills Boxes */
+/*--------------------------------------------------------------
+# Interests
+--------------------------------------------------------------*/
+.interests .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  /* background: rgba(255, 255, 255, 0.08); */
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  margin-bottom: 5px;
+  transition: ease-in-out 0.3s;
+}
+
+.interests .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.interests .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.interests .icon-box:hover {
+  /* background: rgba(255, 255, 255, 0.12); */
+  background: var(--primary-color-hover);
 }
