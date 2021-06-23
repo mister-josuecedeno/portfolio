@@ -1,10 +1,10 @@
-console.log('Connected to api js');
+//console.log('Connected to api js');
 
 $(function () {
   fetch('//josuecedeno-blog.herokuapp.com/GetTopXPosts/3')
     .then((response) => response.json())
     .then(function (data) {
-      console.log(data);
+      //console.log(data);
 
       let blogUrl = '//josuecedeno-blog.herokuapp.com/JosuesPosts/SEO/';
 
