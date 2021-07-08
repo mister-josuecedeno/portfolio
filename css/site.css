@@ -2,13 +2,13 @@
 /* warning - #E0A800 */
 /* profile-image - #EFC265 */
 :root {
-  --primary-color: #E0A800;
+  --primary-color: #e0a800;
   --primary-color-hover: #ebd8a0;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 .my-skill {
   font-size: 3em;
