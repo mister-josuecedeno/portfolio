@@ -37,8 +37,18 @@ $(function () {
         $(`#blog${blogId} > div.card-footer > a`).attr('href', blogLink);
 
         // Create Date
-        // let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
-        // $("#blog0 > div.card-body > span").text(`Created: ${new Date(data[0].created).toLocaleDateString("en-US", options)}`)
+        let options = {
+          // weekday: 'long',
+          // year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+        };
+        $(`#blog${blogId} > div.card-body > small`).text(
+          `MVC Blog | ${new Date(data[0].created).toLocaleDateString(
+            'en-US',
+            options
+          )}`
+        );
       }
     });
 });
